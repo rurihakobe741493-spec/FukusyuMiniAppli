@@ -3,8 +3,8 @@
 <%= render @post %>
 
 <div>
-  <%= link_to "編集(ここはshow.html.erbのページだよ)", edit_post_path(@post) %> |
-  <%= link_to "ポスト一覧へ戻る(ここもshow.html.erbのページだよ)", posts_path %>
+  <%= link_to "Edit this post", edit_post_path(@post) %> |
+  <%= link_to "Back to posts", posts_path %>
 
-  <%= button_to "削除する(ここもshow.html.erbのページだよ)", @post, method: :delete %>
+  <%= button_to "Destroy this post", @post, method: :delete %>
 </div>
