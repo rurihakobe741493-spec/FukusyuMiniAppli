@@ -1,5 +1,5 @@
 # Ruby のベースイメージを指定(今回使うDockerの参照元のイメージ)
-FROM ruby:3.2.8
+FROM ruby:3.3.6
 
 # 環境変数の設定
 ENV LANG C.UTF-8  # 日本語対応
