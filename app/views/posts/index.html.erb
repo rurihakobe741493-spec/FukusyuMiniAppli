@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Posts" %>
+
+<h1>ポスト一覧(index.html.erbのページだよ)</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "詳細表示(index.html.erbのページだよ)", post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "新規投稿(index.html.erbのページだよ)", new_post_path %>

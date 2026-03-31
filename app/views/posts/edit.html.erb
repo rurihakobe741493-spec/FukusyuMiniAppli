@@ -1,0 +1,12 @@
+<% content_for :title, "Editing post" %>
+
+<h1>Editing post(ここはedit.html.erbのページだよ)</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+
+<div>
+  <%= link_to "詳細表示(ここはedit.html.erbのページだよ)", @post %> |
+  <%= link_to "ポスト一覧へ戻る(ここもedit.html.erbのページだよ)", posts_path %>
+</div>

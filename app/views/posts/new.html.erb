@@ -1,0 +1,11 @@
+<% content_for :title, "New post" %>
+
+<h1>新規投稿(ここはnew.html.erbのページだよ)</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+
+<div>
+  <%= link_to "ポスト一覧へ戻る(ここもnew.html.erbのページだよ)", posts_path %>
+</div>
